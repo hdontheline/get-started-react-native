@@ -1,0 +1,15 @@
+https://facebook.github.io/react-native/docs/getting-started
+
+Installed React-Native using homebrew.
+
+I did come across an issue when starting this as I installed node.js incorrectly. 
+    Had to uninstall it completely from my Mac machine to begin this setup again using homebrew.
+
+react-native init AwesomeProject
+    The command used to create a React Native project.
+
+need to cd AwesomeProject
+
+To run the application on my machine, to get the iOS emulator up. The command issue react-native run-ios
+
+Next Step: https://facebook.github.io/react-native/docs/tutorial
