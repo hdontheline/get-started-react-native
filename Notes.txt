@@ -17,3 +17,13 @@ Next Step: https://facebook.github.io/react-native/docs/tutorial
 
 #Learn the basics
     React Native is like React, but it uses native components instead of web components as building blocks
+
+    import, from, class, and extends in the example above are all ES2015 features
+    https://babeljs.io/learn-es2015/
+
+    <View><Text>Hello world!</Text></View>. This is JSX - a syntax for embedding XML within JavaScript.
+    <Text> is a built-in component that just displays some text and View is like the <div> or <span>.
+
+    So this code is defining HelloWorldApp, a new Componentthe only thing that's required is a render function which returns some JSX to render.
+
+
