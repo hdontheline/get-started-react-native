@@ -13,3 +13,7 @@ need to cd AwesomeProject
 To run the application on my machine, to get the iOS emulator up. The command issue react-native run-ios
 
 Next Step: https://facebook.github.io/react-native/docs/tutorial
+
+
+#Learn the basics
+    React Native is like React, but it uses native components instead of web components as building blocks
