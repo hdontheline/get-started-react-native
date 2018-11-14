@@ -1,12 +1,28 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { AppRegistry, Text, View } from 'react-native';
 
-export default class HelloWorldApp extends Component {
-  render () {
-    return (
-      <View>
-        <Text>Hello World!</Text>
+class Greetings extends Component {
+  render () { 
+    return ( 
+      <View style={{alignItems: 'center', paddingTop: 125}}>
+        <Text>Hello {this.props.name}</Text>
       </View>
     );
   }
 }
+
+export default class LotsOfGreetings extends Component {
+  render (){
+    return (
+      <View style={{alignItems: 'center'}}>
+        <Greetings name='Brad'/>
+        <Greetings name='Ipad'/>
+        <Greetings name='Vlad'/>
+      </View>
+    );
+  }
+}
+
+AppRegistry.registerComponent('AwesomeProject', () => LotsOfGreetings);
+
+//Using name as a prop lets us customize the Greeting component, so we can reuse that component for each of our greetings
