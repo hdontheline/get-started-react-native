@@ -1,28 +1,42 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, View } from 'react-native';
 
-class Greetings extends Component {
-  render () { 
-    return ( 
-      <View style={{alignItems: 'center', paddingTop: 125}}>
-        <Text>Hello {this.props.name}</Text>
-      </View>
-    );
-  }
-}
+class Blink extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isShowingText: true };
 
-export default class LotsOfGreetings extends Component {
-  render (){
+    // Toggle the state every second
+    setInterval(() => (
+      this.setState(previousState => (
+        { isShowingText: !previousState.isShowingText }
+      ))
+    ), 1000);
+  }
+
+  render() {
+    if (!this.state.isShowingText) {
+      return null;
+    }
+
     return (
-      <View style={{alignItems: 'center'}}>
-        <Greetings name='Brad'/>
-        <Greetings name='Ipad'/>
-        <Greetings name='Vlad'/>
+      <Text>{this.props.text}</Text>
+    );
+  }
+}
+
+export default class BlinkApp extends Component {
+  render() {
+    return (
+      <View>
+        <Blink text='I love to blink' />
+        <Blink text='Yes blinking is so great' />
+        <Blink text='Why did they ever take this out of HTML' />
+        <Blink text='Look at me look at me look at me' />
       </View>
     );
   }
 }
 
-AppRegistry.registerComponent('AwesomeProject', () => LotsOfGreetings);
-
-//Using name as a prop lets us customize the Greeting component, so we can reuse that component for each of our greetings
+// skip this line if using Create React Native App
+AppRegistry.registerComponent('AwesomeProject', () => BlinkApp);
