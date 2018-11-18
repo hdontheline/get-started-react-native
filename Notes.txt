@@ -65,6 +65,13 @@ Next Step: https://facebook.github.io/react-native/docs/tutorial
     As a component grows in complexity, it is often cleaner to use StyleSheet.create to define several styles in one place.
 
 
-One common pattern is to make your component accept a style prop which in turn is used to style subcomponents. 
-You can use this to make styles "cascade" the way they do in CSS.
+    One common pattern is to make your component accept a style prop which in turn is used to style subcomponents. 
+    You can use this to make styles "cascade" the way they do in CSS.
+
+#Height and Width
+
+The simplest way to set the dimensions of a component is by adding a fixed width and height to style. 
+All dimensions in React Native are unitless, and represent density-independent pixels.
+
+
 
