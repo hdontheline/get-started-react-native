@@ -84,6 +84,21 @@ Next Step: https://facebook.github.io/react-native/docs/tutorial
     If a parent does not have either a fixed width and height or flex, the parent will have dimensions of 0 
     and the flex children will not be visible.
 
+#Layout with Flexbox
+    A component can specify the layout of its children using the flexbox algorithm. 
+    Flexbox is designed to provide a consistent layout on different screen sizes.
+
+    You will normally use a combination of flexDirection, alignItems, and justifyContent to achieve the right layout.
+
+    Flex Direction
+    
+    Adding flexDirection to a component's style determines the primary axis of its layout. 
+    Should the children be organized horizontally (row) or vertically (column)? The default is column.
+
+    
+
+
+
 
 
 
