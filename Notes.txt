@@ -101,6 +101,17 @@ Next Step: https://facebook.github.io/react-native/docs/tutorial
     Should children be distributed at the start, the center, the end, or spaced evenly? 
     Available options are flex-start, center, flex-end, space-around, space-between and space-evenly.
 
+    #Align Items
+
+    Adding alignItems to a component's style determines the alignment of children along the secondary axis 
+    (if the primary axis is row, then the secondary is column, and vice versa). 
+    Should children be aligned at the start, the center, the end, or stretched to fill? 
+    Available options are flex-start, center, flex-end, and stretch.
+    For stretch to have an effect, children must not have a fixed dimension along the secondary axis. 
+    
+    https://facebook.github.io/react-native/docs/layout-props
+
+    
 
 
 
