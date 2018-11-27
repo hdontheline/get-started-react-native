@@ -90,12 +90,18 @@ Next Step: https://facebook.github.io/react-native/docs/tutorial
 
     You will normally use a combination of flexDirection, alignItems, and justifyContent to achieve the right layout.
 
-    Flex Direction
+    #Flex Direction
     
     Adding flexDirection to a component's style determines the primary axis of its layout. 
     Should the children be organized horizontally (row) or vertically (column)? The default is column.
 
+    #Justify Content
     
+    Adding justifyContent to a component's style determines the distribution of children along the primary axis. 
+    Should children be distributed at the start, the center, the end, or spaced evenly? 
+    Available options are flex-start, center, flex-end, space-around, space-between and space-evenly.
+
+
 
 
 
